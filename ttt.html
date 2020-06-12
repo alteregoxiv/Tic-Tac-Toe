@@ -1,0 +1,61 @@
+<!doctype.html>
+<html>
+	
+	<head>
+	
+		<title>Tic-Tac-Tac|Game</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="ttt.css">
+	
+	</head>
+	
+	<body onload="startGame()">
+	
+		<script type="text/javascript" src="ttt.js"></script>
+		
+		<h2 class="p" id="p1">Beelak</h2>
+	
+		<a class="box">
+		
+			<center><h1 id="head">Tic-Tac-Toe</h1></center>
+		
+			<input onfocus="tb=this" id="in1" name="in1" readonly/>
+			<input onfocus="tb=this" id="in2" name="in2" readonly/>
+			<input onfocus="tb=this" id="in3" name="in3" readonly/>
+			
+			<br>
+			
+			<input onfocus="tb=this" id="in4" name="in4" readonly/>
+			<input onfocus="tb=this" id="in5" name="in5" readonly/>
+			<input onfocus="tb=this" id="in6" name="in6" readonly/>
+			
+			<br>
+			
+			<input onfocus="tb=this" id="in7" name="in7" readonly/>
+			<input onfocus="tb=this" id="in8" name="in8" readonly/>
+			<input onfocus="tb=this" id="in9" name="in9" readonly/>
+			
+			<br>
+			
+			<center><button id="butt" type="button" onclick="starto()">PUT</button></center>
+		
+		</a>	
+		
+		<h2 class="p" id="p2">Oaite</h2>
+		
+		
+		<center>
+		<div class="final">
+		
+			<a>Do you wish to continue?</a>
+			<button id="yo" type="button" onclick="window.location.reload(true)">Yes</button>
+			<button id="no" type="button" onclick="gobak()">No</button>
+		
+		</div>
+		</center>
+		
+		<div class="footer"><em>alterego14</em> Copyrights</div>
+	
+	</body>
+	
+</html>

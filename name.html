@@ -1,0 +1,68 @@
+<!doctype.html>
+<html>
+
+	<head>
+		
+		<title>Tic-Tac-Toe|Info</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="name.css"/>
+		
+	</head>
+	
+	<body>
+		
+		<div class="main">
+		<center><h2 id="head">Tic-Tac-Toe</h2></center>
+		
+		<div class="pl1">
+			<h1 style="color: blue">Player 1 :- </h1>
+			<a>Name : </a>
+			<input class="name" id="p1" style="font-size: 30px"></input>
+			<a>Symbol : </a>
+			<input class="name" id="p1" style="font-size: 30px"></input>
+		</div>
+		
+		<div class="pl2">
+			<h1 style="color: red">Player 2 :- </h1>
+			<a>Name : </a>
+			<input class="name" id="p2" style="font-size: 30px"></input>
+			<a>Symbol : </a>
+			<input class="name" id="p2" style="font-size: 30px"></input>
+		</div>
+		
+		<center><button class="butt" type="button" onclick="leggo()" style="margin-top: 50px ; font-size: 30px;">LEGGO</button></center>
+		
+		<div class="footer"><em>alterego14</em> Copyrights</div>
+		
+		<script type="text/javascript">
+		
+			function leggo(){
+				var p = document.getElementsByTagName('input');
+				
+				localStorage['names'] = [];
+				localStorage['symbols'] = [];
+				
+				if(p[0].value==="" || p[2].value==="")
+				{
+					alert("Name(s) field(s) is(are) empty..........");
+					return;
+				}
+				
+				if(p[1].value==="" || p[3].value==="")
+				{
+					alert("Symbol(s) field(s) is(are) empty..........");
+					return;
+				}
+				
+				localStorage.names = [p[0].value , p[2].value];
+				localStorage.symbols = [p[1].value , p[3].value];
+				
+				window.location.assign("ttt.html");
+			}
+		
+		</script>
+		</div>
+		
+	</body>
+
+</html>
